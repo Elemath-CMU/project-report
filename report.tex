@@ -46,6 +46,7 @@
 %% if you're having problems with overfull boxes, you may need to increase
 %% the tolerance to 9999
 % \tolerance=9999
+\setlength{\emergencystretch}{3em}
 
 \bibliographystyle{plain}
 % \bibliographystyle{IEEEbib}
@@ -106,5 +107,9 @@
 Your biosketch goes here. Make sure it sits inside
 the \texttt{biosketch} environment.
 \end{biosketch}
-\fi % \ifproject
+\fi %\ifproject
+
+% close any unclosed list opened in included chapters
+\end{itemize}
+
 \end{document}
