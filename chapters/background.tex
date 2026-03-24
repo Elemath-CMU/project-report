@@ -44,21 +44,27 @@
 \section{Platform development tools}
     \subsection{TypeScript}
     TypeScript\cite{typescript} คือภาษาโปรแกรมที่เป็น superset ของ JavaScript โดยมีการเพิ่มระบบ static typing หรือการระบุชนิดตัวแปรที่ชัดเจนลงไป
-    โดย TypeScript มีความสำคัญต่อการพัฒนาโครงงานนี้ในด้านต่าง ๆ ดังนี้
+    โดย TypeScript มีคุณสมบัติสำคัญต่อการพัฒนาโครงงานนี้ในด้านต่าง ๆ ดังนี้
     \begin{itemize}
         \item Type safety: ช่วยลดข้อผิดพลาดในระหว่างการเขียนโค้ด เช่น การส่งค่าตัวเลขเศษส่วนผิดประเภท
         \item Readability and maintenance: โค้ดมีความเป็นระเบียบและอ่านง่ายขึ้น ช่วยให้สมาชิกในทีมที่เป็น developer สามารถทำงานร่วมกันได้อย่างมีประสิทธิภาพ
         \item Tooling support: สามารถใช้ทำงานร่วมกับ Visual Studio Code ได้
     \end{itemize}
     \subsection{Framework}
-    Tailwind CSS\cite{tailwind} เป็น framework ที่ช่วยในการออกแบบและพัฒนา UI ซึ่งมีจุดเด่นในการช่วยให้ UI นั้นมีความยืดหยุ่นและสามารถปรับแต่งได้ง่าย
-    โดย Tailwind CSS มีความสำคัญต่อการพัฒนาโครงงานนี้ในด้านต่างๆดังนี้
+    Vite\cite{vite} คือเครื่องมือที่ช่วยในการพัฒนา web application ซึ่งเหมาะสำหรับการพัฒนาโครงงานนี้ที่ต้องการการปรับปรุงและทดสอบระบบอย่างรวดเร็ว
+    ทำให้โครงงานนี้มีการนำ Vite มาใช้ในการพัฒนา โดย Vite มีคุณสมบัติสำคัญต่อการพัฒนาโครงงานนี้ในด้านต่าง ๆ ดังนี้
     \begin{itemize}
-        \item Utility-first approach: ช่วยให้การออกแบบ UI มีความยืดหยุ่นและสามารถปรับแต่งได้ง่าย
-        \item Responsive design: มีเครื่องมือที่ช่วยให้การออกแบบ UI สามารถปรับขนาดและรูปแบบได้ตามอุปกรณ์ที่ใช้งาน
-        \item Community and ecosystem: มีชุมชนผู้ใช้งานที่ใหญ่และมีเครื่องมือเสริมมากมาย เช่น Tailwind UI ที่ช่วยให้การสร้าง UI เป็นไปอย่างรวดเร็วและมีประสิทธิภาพ
+        \item Fast development: Vite มีการใช้ ES modules ในการโหลดโค้ด ทำให้สามารถทำ hot module replacement (HMR) ได้อย่างรวดเร็ว
+        \item Modern features: รองรับฟีเจอร์ใหม่ ๆ ของ JavaScript และ TypeScript ได้อย่างเต็มที่
+        \item Simple configuration: มีการตั้งค่าที่ง่ายและไม่ซับซ้อน ทำให้ทีม developer สามารถเริ่มต้นการพัฒนาได้อย่างรวดเร็ว
+    \end{itemize}
     \subsection{Deployment method}
-
+    GitHub\cite{GitHub} และ Vercel\cite{vercel} เป็นแพลตฟอร์มที่ช่วยในการจัดการโค้ดและการ deploy web application โดยโครงงานนี้ได้มีการนำแพลตฟอร์มทั้งสองมาใช้ร่วมกันดังนี้
+    \begin{itemize}
+        \item GitHub: ช่วยให้ทีม developer สามารถทำงานร่วมกัน และจัดการโค้ดได้อย่างมีประสิทธิภาพผ่านการใช้ version control และ pull requests
+        \item Vercel: ช่วยในการ deploy web application โดยสามารถเชื่อมต่อกับ GitHub เพื่อทำการ deploy อัตโนมัติเมื่อมีการ push โค้ดใหม่ขึ้นไป
+    \end{itemize}
+    
 \section{\ifenglish%
 \ifcpe CPE \else ISNE \fi knowledge used, applied, or integrated in this project
 \else%
