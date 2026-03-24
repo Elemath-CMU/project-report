@@ -21,7 +21,7 @@ jobs:
     - name: Install Thai fonts
       run: |
         sudo apt-get update
-        sudo apt-get install -y fonts-thai-tlwg
+        sudo apt-get install -y fonts-thai-tlwg fonts-tlwg-laksaman
 
     - name: Build PDF with Makefile
       run: make
